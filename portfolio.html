@@ -1,0 +1,296 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+        integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+        crossorigin="anonymous" />
+    </head>
+
+<body>
+    <header class="header header-portfolio">
+        <div class="container">
+            <nav class="header-navigation ">
+                <a href="" class="header-logo">
+                    <img src="./images/logo.svg" alt="Лого сайта"></a>
+               
+                    <ul class="header-list list">
+                    <li class="header-item">
+                        <a class="header-link link" href="index.html">Студия</a>
+                    </li>
+                    <li class="header-item">
+                        <a class="header-link link" href="">Портфолио</a>
+                    </li>
+                    <li class="header-item">
+                        <a class="header-link link" href="">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="menu-open" data-menu-open>
+                <svg class="menu-btn" width="24" height="16">
+                    <use href="./images/sprite.svg#icon-menu"></use>
+                </svg>
+            </button>
+            <ul class="header-contact list">
+                <li class="header-contact-item">
+                         <a class="header-mail link" href="mailto:info@devstudio.com">
+                            <svg class="header-mail link" width="16" height="12">
+                            <use href="./images/sprite.svg#icon-mail"></use>
+                            </svg>
+                        info@devstudio.com</a>
+                </li>
+                <li class="header-contact-item">
+                    <a class="header-tel link" href="tel:+380961111111">
+                            <svg class="header-mail link" width="10" height="16">
+                                <use href="./images/sprite.svg#icon-smartphone"></use>
+                            </svg>
+                        +38 096 111 11 11</a>
+                </li>
+            </ul>
+            <div class="mob-menu is-hidden" data-menu>
+                <button class="menu-close" data-menu-close>
+                    <svg class="menu-btn" width="18" height="18">
+                        <use href="./images/sprite.svg#icon-close-mob"></use>
+                    </svg>
+                </button>
+                <ul class="mob-menu-list list">
+                    <li class="mob-menu-item">
+                        <a class="mob-menu-link link" href="index.html">Студия</a>
+                    </li>
+                    <li class="mob-menu-item">
+                        <a class="mob-menu-link link" href="portfolio.html">Портфолио</a>
+                    </li>
+                    <li class="mob-menu-item">
+                        <a class="mob-menu-link link" href="">Контакты</a>
+                    </li>
+                    <li class="mob-menu-contact">
+                        <a class="mob-menu-tel link" href="tel:+380961111111">
+                            +38 096 111 11 11</a>
+                    </li>
+                    <li class="mob-menu-post">
+                        <a class="mob-menu-mail link" href="mailto:info@devstudio.com">
+                            info@devstudio.com</a>
+                    </li>
+                </ul>
+                <ul class="mob-menu-socials list">
+                    <li class="mob-menu-soc link">
+                        Instagram
+                    </li>
+                    <li class="mob-menu-soc link">
+                        Twitter
+                    </li>
+                    <li class="mob-menu-soc link">
+                        Facebook
+                    </li>
+                    <li class="mob-menu-soc link">
+                        Linkedin
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="menu">
+        <div class="container">
+            <nav class="menu-navigation">
+                <ul class="menu-list list">
+                    <li class="menu-item">
+                        <button class="menu-link link" type="button"> Все </button>
+                    </li>
+                    <li class="menu-item">
+                        <button class="menu-link link" type="button"> Веб-сайты </button>
+                    </li>
+                    <li class="menu-item">
+                        <button class="menu-link link" type="button"> Приложения </button>
+                    </li>
+                    <li class="menu-item">
+                        <button class="menu-link link" type="button"> Дизайн </button>
+                    </li>
+                    <li class="menu-item">
+                        <button class="menu-link link" type="button"> Маркетинг </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <section class="gallery">
+        <div class="container">
+            <nav class="gallery-navigation">
+                <h1 hidden> Проекты </h1>
+                <ul class="gallery-list list">
+                    <li class="gallery-item">
+                        <div class="gallery-overlay">
+                            <picture>
+                                <source srcset="./images/portfolio/portf1.jpg 1x, ./images/portfolio/portf1x2.jpg 2x" media="(min-width: 1200px)" />
+                                <source srcset="./images/portfolio/portf1-tab.jpg 1x, ./images/portfolio/portf1x2-tab.jpg 2x" media="(min-width: 768px)" />
+                                <img srcset="./images/portfolio/portf1-mob.jpg 1x, ./images/portfolio/portf1x2-mob.jpg 2x" alt="Игорь Демьяненко" />
+                            </picture>
+                        <p class="gallery-top-text">
+                            Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
+                            шпионажа и атак на защищённые сервера конкурентов.
+                        </p>
+                        </div>
+                        <h2 class="gallery-name"> Технокряк </h2>
+                        <p class="gallery-kind"> Веб-сайт </p>
+                    </li>
+                    <li class="gallery-item">
+                        <picture>
+                            <source srcset="./images/portfolio/portf2.jpg 1x, ./images/portfolio/portf2x2.jpg 2x" media="(min-width: 1200px)" />
+                            <source srcset="./images/portfolio/portf2-tab.jpg 1x, ./images/portfolio/portf2x2-tab.jpg 2x"
+                                media="(min-width: 768px)" />
+                            <img srcset="./images/portfolio/portf2-mob.jpg 1x, ./images/portfolio/portf2x2-mob.jpg 2x" alt="Игорь Демьяненко" />
+                        </picture>
+                        <h2 class="gallery-name"> Постер New Orlean vs Golden Star </h2>
+                        <p class="gallery-kind"> Дизайн </p>
+                    </li>
+                    <li class="gallery-item">
+                        <picture>
+                            <source srcset="./images/portfolio/portf3.jpg 1x, ./images/portfolio/portf3x2.jpg 2x" media="(min-width: 1200px)" />
+                            <source srcset="./images/portfolio/portf3-tab.jpg 1x, ./images/portfolio/portf3x2-tab.jpg 2x"
+                                media="(min-width: 768px)" />
+                            <img srcset="./images/portfolio/portf3-mob.jpg 1x, ./images/portfolio/portf3x2-mob.jpg 2x" alt="Игорь Демьяненко" />
+                        </picture>
+                        <h2 class="gallery-name"> Ресторан Seafood </h2>
+                        <p class="gallery-kind"> Приложение </p>
+                    </li>
+                    <li class="gallery-item">
+                        <picture>
+                            <source srcset="./images/portfolio/portf4.jpg 1x, ./images/portfolio/portf4x2.jpg 2x" media="(min-width: 1200px)" />
+                            <source srcset="./images/portfolio/portf4-tab.jpg 1x, ./images/portfolio/portf4x2-tab.jpg 2x"
+                                media="(min-width: 768px)" />
+                            <img srcset="./images/portfolio/portf4-mob.jpg 1x, ./images/portfolio/portf4x2-mob.jpg 2x" alt="Игорь Демьяненко" />
+                        </picture>
+                        <h2 class="gallery-name"> Проект Prime </h2>
+                        <p class="gallery-kind"> Маркетинг </p>
+                    </li>
+                    <li class="gallery-item">
+                        <picture>
+                            <source srcset="./images/portfolio/portf5.jpg 1x, ./images/portfolio/portf5x2.jpg 2x" media="(min-width: 1200px)" />
+                            <source srcset="./images/portfolio/portf5-tab.jpg 1x, ./images/portfolio/portf5x2-tab.jpg 2x"
+                                media="(min-width: 768px)" />
+                            <img srcset="./images/portfolio/portf5-mob.jpg 1x, ./images/portfolio/portf5x2-mob.jpg 2x" alt="Игорь Демьяненко" />
+                        </picture>
+                        <h2 class="gallery-name"> Проект Boxes </h2>
+                        <p class="gallery-kind"> Приложение </p>
+                    </li>
+                    <li class="gallery-item">
+                        <picture>
+                            <source srcset="./images/portfolio/portf6.jpg 1x, ./images/portfolio/portf6x2.jpg 2x" media="(min-width: 1200px)" />
+                            <source srcset="./images/portfolio/portf6-tab.jpg 1x, ./images/portfolio/portf6x2-tab.jpg 2x"
+                                media="(min-width: 768px)" />
+                            <img srcset="./images/portfolio/portf6-mob.jpg 1x, ./images/portfolio/portf6x2-mob.jpg 2x" alt="Игорь Демьяненко" />
+                        </picture>
+                        <h2 class="gallery-name"> Inspiration has no Borders </h2>
+                        <p class="gallery-kind"> Веб-сайт </p>
+                    </li>
+                    <li class="gallery-item">
+                        <picture>
+                            <source srcset="./images/portfolio/portf7.jpg 1x, ./images/portfolio/portf7x2.jpg 2x" media="(min-width: 1200px)" />
+                            <source srcset="./images/portfolio/portf7-tab.jpg 1x, ./images/portfolio/portf7x2-tab.jpg 2x"
+                                media="(min-width: 768px)" />
+                            <img srcset="./images/portfolio/portf7-mob.jpg 1x, ./images/portfolio/portf7x2-mob.jpg 2x" alt="Игорь Демьяненко" />
+                        </picture>
+                        <h2 class="gallery-name"> Издание Limited Edition </h2>
+                        <p class="gallery-kind"> Дизайн </p>
+                    </li>
+                    <li class="gallery-item">
+                        <picture>
+                            <source srcset="./images/portfolio/portf8.jpg 1x, ./images/portfolio/portf8x2.jpg 2x" media="(min-width: 1200px)" />
+                            <source srcset="./images/portfolio/portf8-tab.jpg 1x, ./images/portfolio/portf8x2-tab.jpg 2x"
+                                media="(min-width: 768px)" />
+                            <img srcset="./images/portfolio/portf8-mob.jpg 1x, ./images/portfolio/portf8x2-mob.jpg 2x" alt="Игорь Демьяненко" />
+                        </picture>
+                        <h2 class="gallery-name"> Проект LAB </h2>
+                        <p class="gallery-kind"> Маркетинг </p>
+                    </li>
+                    <li class="gallery-item">
+                        <picture>
+                            <source srcset="./images/portfolio/portf9.jpg 1x, ./images/portfolio/portf9x2.jpg 2x" media="(min-width: 1200px)" />
+                            <source srcset="./images/portfolio/portf9-tab.jpg 1x, ./images/portfolio/portf9x2-tab.jpg 2x"
+                                media="(min-width: 768px)" />
+                            <img srcset="./images/portfolio/portf9-mob.jpg 1x, ./images/portfolio/portf9x2-mob.jpg 2x" alt="Игорь Демьяненко" />
+                        </picture>
+                        <h2 class="gallery-name"> Growing Business </h2>
+                        <p class="gallery-kind"> Приложение </p>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+<footer class="contact section">
+    <div class="contact-title container ">
+        <div class="contacts">
+            <a href=""><img src="images/logo2.svg" alt="Лого сайта"></a>
+            <ul class="contact-list list">
+                <li class="contact-item">
+                    <p class="contact-item-adress link"> г. Киев, пр-т Леси Украинки, 26 </p>
+                </li>
+                <li class="contact-item">
+                    <a class="contact-item-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+                <li class="contact-item">
+                    <a class="contact-item-tel link" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+            </ul>
+        </div>
+        <div class="join">
+            <h2 class="join-title">ПРИСОЕДИНЯЙТЕСЬ</h2>
+            <ul class="join-list list">
+                <li class="join-item">
+                    <a href="" class="join-link link">
+                        <svg class="join-icon" width="20" height="20">
+                            <use href="./images/sprite.svg#icon-inst"> </use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="join-item">
+                    <a href="" class="join-link link">
+                        <svg class="join-icon" width="20" height="20">
+                            <use href="./images/sprite.svg#icon-twit"> </use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="join-item">
+                    <a href="" class="join-link link">
+                        <svg class="join-icon" width="20" height="20">
+                            <use href="./images/sprite.svg#icon-fac"> </use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="join-item">
+                    <a href="" class="join-link link">
+                        <svg class="join-icon" width="20" height="20">
+                            <use href="./images/sprite.svg#icon-link"> </use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="mailing">
+            <h2 class="mailing-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
+            <form action="#" class="mailing-form" method="GET">
+                <input type="text" name="E-mail" class="form-input" placeholder="E-mail">
+                <button class="mailing-button" type="submit">Подписаться
+                    <svg class="mailing-icon" width="30" height="30">
+                        <use href="./images/sprite.svg#icon-send1"> </use>
+                    </svg>
+                </button>
+            </form>
+
+
+        </div>
+    </div>
+</footer>
+<script src="./js/menu.js">
+</script>
+</body>
+
+</html>
